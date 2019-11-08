@@ -15,6 +15,8 @@
 		BC2C3A442375541E008C9947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A422375541E008C9947 /* Main.storyboard */; };
 		BC2C3A4623755420008C9947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A4523755420008C9947 /* Assets.xcassets */; };
 		BC2C3A4923755420008C9947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A4723755420008C9947 /* LaunchScreen.storyboard */; };
+		BC2C3A5123755542008C9947 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3A5023755542008C9947 /* MSButtonNode.swift */; };
+		BC2C3A5423755782008C9947 /* sfx_swipe.caf in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A5323755782008C9947 /* sfx_swipe.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		BC2C3A4523755420008C9947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2C3A4823755420008C9947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2C3A4A23755420008C9947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2C3A5023755542008C9947 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		BC2C3A5323755782008C9947 /* sfx_swipe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_swipe.caf; sourceTree = "<group>"; };
+		BC2C3A5B237557CD008C9947 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,8 @@
 			children = (
 				BC2C3A372375541E008C9947 /* SushiNeko */,
 				BC2C3A362375541E008C9947 /* Products */,
+				BC2C3A5B237557CD008C9947 /* assets.atlas */,
+				BC2C3A5223755782008C9947 /* SFX */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,7 @@
 			children = (
 				BC2C3A382375541E008C9947 /* AppDelegate.swift */,
 				BC2C3A3A2375541E008C9947 /* GameScene.sks */,
+				BC2C3A5023755542008C9947 /* MSButtonNode.swift */,
 				BC2C3A3C2375541E008C9947 /* Actions.sks */,
 				BC2C3A3E2375541E008C9947 /* GameScene.swift */,
 				BC2C3A402375541E008C9947 /* GameViewController.swift */,
@@ -71,6 +79,14 @@
 				BC2C3A4A23755420008C9947 /* Info.plist */,
 			);
 			path = SushiNeko;
+			sourceTree = "<group>";
+		};
+		BC2C3A5223755782008C9947 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				BC2C3A5323755782008C9947 /* sfx_swipe.caf */,
+			);
+			path = SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2C3A442375541E008C9947 /* Main.storyboard in Resources */,
+				BC2C3A5423755782008C9947 /* sfx_swipe.caf in Resources */,
 				BC2C3A3B2375541E008C9947 /* GameScene.sks in Resources */,
 				BC2C3A4623755420008C9947 /* Assets.xcassets in Resources */,
 				BC2C3A4923755420008C9947 /* LaunchScreen.storyboard in Resources */,
@@ -149,6 +166,7 @@
 				BC2C3A3F2375541E008C9947 /* GameScene.swift in Sources */,
 				BC2C3A412375541E008C9947 /* GameViewController.swift in Sources */,
 				BC2C3A392375541E008C9947 /* AppDelegate.swift in Sources */,
+				BC2C3A5123755542008C9947 /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
