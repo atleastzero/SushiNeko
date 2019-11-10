@@ -15,6 +15,7 @@ class GameScene: SKScene {
     var sushiBasePiece: SushiPiece!
     var character: Character!
     var healthBar: SKSpriteNode!
+    var scoreLabel: SKLabelNode!
     var sushiTower: [SushiPiece] = []
     var state: GameState = .title
     var playButton: MSButtonNode!
@@ -26,8 +27,14 @@ class GameScene: SKScene {
             
             /* Cap Health */
             if health > 1.0 {
-                health 1.0
+                health = 1.0
             }
+        }
+    }
+    
+    var score: Int = 0 {
+        didSet {
+            scoreLabel.text = String(score)
         }
     }
     
@@ -38,6 +45,8 @@ class GameScene: SKScene {
         sushiBasePiece = childNode(withName: "sushiBasePiece") as! SushiPiece
         character = childNode(withName: "character") as! Character
         healthBar = childNode(withName: "healthBar") as! SKSpriteNode
+        scoreLabel = childNode(withName: "scoreLabel") as!
+            SKLabelNode
         
         /* Setup chopstick connection */
         sushiBasePiece.connectChopsticks()
@@ -146,6 +155,9 @@ class GameScene: SKScene {
             
             /* Increment Health */
             health += 0.1
+            
+            /* Increment Score */
+            score += 1
             
             /* Remove from sushi tower array */
             sushiTower.removeFirst()
