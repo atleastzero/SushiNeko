@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BC2C3A392375541E008C9947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3A382375541E008C9947 /* AppDelegate.swift */; };
 		BC2C3A3B2375541E008C9947 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A3A2375541E008C9947 /* GameScene.sks */; };
-		BC2C3A3D2375541E008C9947 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A3C2375541E008C9947 /* Actions.sks */; };
 		BC2C3A3F2375541E008C9947 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3A3E2375541E008C9947 /* GameScene.swift */; };
 		BC2C3A412375541E008C9947 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3A402375541E008C9947 /* GameViewController.swift */; };
 		BC2C3A442375541E008C9947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A422375541E008C9947 /* Main.storyboard */; };
@@ -17,13 +16,16 @@
 		BC2C3A4923755420008C9947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A4723755420008C9947 /* LaunchScreen.storyboard */; };
 		BC2C3A5123755542008C9947 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3A5023755542008C9947 /* MSButtonNode.swift */; };
 		BC2C3A5423755782008C9947 /* sfx_swipe.caf in Resources */ = {isa = PBXBuildFile; fileRef = BC2C3A5323755782008C9947 /* sfx_swipe.caf */; };
+		BC2C3A5D23755A5F008C9947 /* SushiPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3A5C23755A5F008C9947 /* SushiPiece.swift */; };
+		BC5094DB2377586300B4190C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5094DA2377586300B4190C /* Character.swift */; };
+		BC5094DD237794EE00B4190C /* AnimationActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC5094DC237794EE00B4190C /* AnimationActions.sks */; };
+		BC6662DD237617D7003AF3D6 /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = BC6662DC237617D7003AF3D6 /* assets.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC2C3A352375541E008C9947 /* SushiNeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiNeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2C3A382375541E008C9947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2C3A3A2375541E008C9947 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		BC2C3A3C2375541E008C9947 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		BC2C3A3E2375541E008C9947 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		BC2C3A402375541E008C9947 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BC2C3A432375541E008C9947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,7 +34,10 @@
 		BC2C3A4A23755420008C9947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC2C3A5023755542008C9947 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		BC2C3A5323755782008C9947 /* sfx_swipe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_swipe.caf; sourceTree = "<group>"; };
-		BC2C3A5B237557CD008C9947 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
+		BC2C3A5C23755A5F008C9947 /* SushiPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiPiece.swift; sourceTree = "<group>"; };
+		BC5094DA2377586300B4190C /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		BC5094DC237794EE00B4190C /* AnimationActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AnimationActions.sks; sourceTree = "<group>"; };
+		BC6662DC237617D7003AF3D6 /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +56,6 @@
 			children = (
 				BC2C3A372375541E008C9947 /* SushiNeko */,
 				BC2C3A362375541E008C9947 /* Products */,
-				BC2C3A5B237557CD008C9947 /* assets.atlas */,
 				BC2C3A5223755782008C9947 /* SFX */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +72,16 @@
 			isa = PBXGroup;
 			children = (
 				BC2C3A382375541E008C9947 /* AppDelegate.swift */,
+				BC5094DC237794EE00B4190C /* AnimationActions.sks */,
 				BC2C3A3A2375541E008C9947 /* GameScene.sks */,
+				BC5094DA2377586300B4190C /* Character.swift */,
 				BC2C3A5023755542008C9947 /* MSButtonNode.swift */,
-				BC2C3A3C2375541E008C9947 /* Actions.sks */,
 				BC2C3A3E2375541E008C9947 /* GameScene.swift */,
+				BC2C3A5C23755A5F008C9947 /* SushiPiece.swift */,
 				BC2C3A402375541E008C9947 /* GameViewController.swift */,
 				BC2C3A422375541E008C9947 /* Main.storyboard */,
 				BC2C3A4523755420008C9947 /* Assets.xcassets */,
+				BC6662DC237617D7003AF3D6 /* assets.atlas */,
 				BC2C3A4723755420008C9947 /* LaunchScreen.storyboard */,
 				BC2C3A4A23755420008C9947 /* Info.plist */,
 			);
@@ -149,10 +156,11 @@
 			files = (
 				BC2C3A442375541E008C9947 /* Main.storyboard in Resources */,
 				BC2C3A5423755782008C9947 /* sfx_swipe.caf in Resources */,
+				BC5094DD237794EE00B4190C /* AnimationActions.sks in Resources */,
 				BC2C3A3B2375541E008C9947 /* GameScene.sks in Resources */,
+				BC6662DD237617D7003AF3D6 /* assets.atlas in Resources */,
 				BC2C3A4623755420008C9947 /* Assets.xcassets in Resources */,
 				BC2C3A4923755420008C9947 /* LaunchScreen.storyboard in Resources */,
-				BC2C3A3D2375541E008C9947 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +174,8 @@
 				BC2C3A3F2375541E008C9947 /* GameScene.swift in Sources */,
 				BC2C3A412375541E008C9947 /* GameViewController.swift in Sources */,
 				BC2C3A392375541E008C9947 /* AppDelegate.swift in Sources */,
+				BC5094DB2377586300B4190C /* Character.swift in Sources */,
+				BC2C3A5D23755A5F008C9947 /* SushiPiece.swift in Sources */,
 				BC2C3A5123755542008C9947 /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
