@@ -14,9 +14,22 @@ class GameScene: SKScene {
     /* Game objects */
     var sushiBasePiece: SushiPiece!
     var character: Character!
+    var healthBar: SKSpriteNode!
     var sushiTower: [SushiPiece] = []
     var state: GameState = .title
     var playButton: MSButtonNode!
+    
+    var health: CGFloat = 1.0 {
+        didSet {
+            /* Scale health bar between 0.0 -> 1.0 e.g. 0 -> 100% */
+            healthBar.xScale = health
+            
+            /* Cap Health */
+            if health > 1.0 {
+                health 1.0
+            }
+        }
+    }
     
     override func didMove(to view: SKView) {
         super.didMove(to: view)
@@ -24,6 +37,7 @@ class GameScene: SKScene {
         /* Connect game objects */
         sushiBasePiece = childNode(withName: "sushiBasePiece") as! SushiPiece
         character = childNode(withName: "character") as! Character
+        healthBar = childNode(withName: "healthBar") as! SKSpriteNode
         
         /* Setup chopstick connection */
         sushiBasePiece.connectChopsticks()
@@ -129,6 +143,10 @@ class GameScene: SKScene {
                 /* No need to continue as player is dead */
                 return
             }
+            
+            /* Increment Health */
+            health += 0.1
+            
             /* Remove from sushi tower array */
             sushiTower.removeFirst()
             /* Animate the punched sushi piece */
@@ -149,6 +167,18 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         moveTowerDone()
+        
+        /* Called before each frame is rendered */
+        if state != .playing {
+            return
+        }
+        
+        /* Decrease Health */
+        health -= 0.01
+        /* Check if player out of health */
+        if health < 0 {
+            gameOver()
+        }
     }
     
     func gameOver() {
